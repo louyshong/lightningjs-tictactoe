@@ -225,7 +225,7 @@ export default class Game extends Lightning.Component {
                     smooth: { alpha: 0 },
                   },
                   Notification: {
-                    text: { text: 'Tie :( (press enter to try again)' },
+                    text: { text: 'Tie (press enter to try again)' },
                     smooth: { alpha: 1 },
                   },
                 })
