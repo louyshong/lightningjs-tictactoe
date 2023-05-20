@@ -17,4 +17,12 @@ export default class Main extends Lightning.Component {
       },
     }
   }
+
+  _getFocused() {
+    return this.tag('Menu')
+  }
+
+  _handleEnter() {
+    this.signal('select', { item: this.tag('Menu').activeItem })
+  }
 }

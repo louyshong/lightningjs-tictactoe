@@ -7,7 +7,7 @@ export default class Splash extends Lightning.Component {
         x: 960,
         y: 540,
         mount: 0.5,
-        text: { text: 'LOADING..', fontFace: 'pixel' },
+        text: { text: 'LOADING...', fontFace: 'pixel' },
       },
     }
   }
@@ -18,7 +18,7 @@ export default class Splash extends Lightning.Component {
     this._pulse = this.tag('Logo').animation({
       duration: 4,
       repeat: 0,
-      actions: [{ p: 'alpha', v: { 0: 0, 0.5: 1, 1: 0 } }],
+      actions: [{ p: 'alpha', v: { 0: 0, 0.5: 0.5, 1: 0 } }],
     })
 
     // add a finish eventlistener, so we can send a signal
